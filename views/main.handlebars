@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/bootstrap/bootstrap.css" />
+  <!-- fontAwesome -->
+  <script src="https://kit.fontawesome.com/b790bb00cb.js" crossorigin="anonymous"></script>
+  <title>Mercado Web</title>
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  {{> Menu }}
+
+  <h1 class="text-center mt-5">Bienvenido al mercado WEB, seleccione sus productos</h1>
+
+  <!-- Card -->
+  <div class="jumbotron">
+    {{> Producto}}
+
+  </div>
+
+  <!-- Paso 3 -->
+  <script src="/jquery/jquery.js"></script>
+  <!-- Paso 4 -->
+  <script>
+    $(document).ready(() => {
+      $(".jumbotron").css("background", "white").css("color", "black");
+    });
+  </script>
+
+</body>
+
+</html>
